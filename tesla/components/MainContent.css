@@ -1,0 +1,37 @@
+.main-content {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .main-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .car-image {
+    width: 80%;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  
+  .learn-more-btn {
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #003e80;
+  }
+  
+  .extra-info {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
