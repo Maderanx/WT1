@@ -18,3 +18,5 @@ npm create vite@latest
 npx create-react-app myapp
 
 npm install react-router-dom
+
+npm install styled-components
