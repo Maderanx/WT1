@@ -14,4 +14,7 @@ lab exercise and code from ppts
 20marks
 
 npm create vite@latest
+
 npx create-react-app myapp
+
+npm install react-router-dom
