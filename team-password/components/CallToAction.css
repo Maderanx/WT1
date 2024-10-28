@@ -1,0 +1,22 @@
+/* CallToAction.css */
+.call-to-action {
+    background-color: #50B790;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .cta-button {
+    background-color: white;
+    color: #50B790;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .cta-button:hover {
+    background-color: #e0f7f4;
+  }
+  
