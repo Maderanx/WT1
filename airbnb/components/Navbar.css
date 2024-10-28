@@ -1,0 +1,14 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+  }
+  .navbar-logo {
+    height: 30px;
+  }
+  .navbar-links li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
