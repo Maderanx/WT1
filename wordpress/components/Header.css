@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav {
+    display: flex;
+    gap: 15px; /* Adjust this value to move items closer */
+}
+
+.nav a {
+    color: white;  /* Make the text color white */
+    text-decoration: none;  /* Remove the underline */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;  /* Make the logo text color white */
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.login-button, .get-started-button {
+    padding: 5px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.get-started-button {
+    background-color: #fff;
+    color: #0073aa;
+    border-radius: 5px;
+}

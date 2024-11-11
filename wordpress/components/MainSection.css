@@ -1,0 +1,22 @@
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .content {
+    max-width: 40%; /* Adjust as needed */
+  }
+  
+  .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .image-container img {
+    width: 80%; /* Adjust the width */
+    margin-left: auto; /* Centers image more to the middle */
+  }
+  

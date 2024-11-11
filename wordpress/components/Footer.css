@@ -1,0 +1,32 @@
+.footer {
+    background-color: #0040ff;
+    padding: 10px 20px;
+    overflow: hidden;
+  }
+  
+  .scrolling-names {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+  }
+  
+  .names {
+    display: inline-block;
+    animation: scroll-left 15s linear infinite;
+  }
+  
+  .names span {
+    display: inline-block;
+    margin-right: 50px; /* Adjust space between names */
+    font-weight: bold;
+  }
+  
+  @keyframes scroll-left {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
