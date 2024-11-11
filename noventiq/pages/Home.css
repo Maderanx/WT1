@@ -1,0 +1,19 @@
+.home {
+    text-align: center;
+  }
+  
+  .hero {
+    background-color: #e9ecef;
+    padding: 2rem;
+  }
+  
+  .hero .hero-image {
+    max-width: 100%;
+    height: auto;
+  }
+.page-container {
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  box-sizing: border-box;
+}
