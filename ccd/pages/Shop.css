@@ -1,0 +1,12 @@
+/* src/pages/Shop.css */
+.shop-page {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .shop-page h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #C0292A;
+  }
+  

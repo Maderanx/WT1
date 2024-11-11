@@ -1,0 +1,12 @@
+/* src/pages/OrderOnline.css */
+.order-page {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .order-page h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #C0292A;
+  }
+  

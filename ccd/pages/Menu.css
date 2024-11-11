@@ -1,0 +1,12 @@
+/* src/pages/Menu.css */
+.menu-page {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .menu-page h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #C0292A;
+  }
+  
