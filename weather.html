@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Data Graph</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script> <!-- Add the date adapter -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    #weatherChart {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Weather Data</h1>
+  <canvas id="weatherChart"></canvas>
+
+  <script>
+    // OpenWeather API details
+    const apiKey = '620372bcec387693deb0605ea544b87c'; // Replace with your OpenWeather API key
+    const city = 'Bengaluru'; // Change this to any city you want
+
+    // Fetch weather data
+    async function getWeatherData() {
+      const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
+      const response = await fetch(url);
+      const data = await response.json();
+      return data;
+    }
+
+    // Process and prepare data for the chart
+    async function displayWeatherChart() {
+      const data = await getWeatherData();
+
+      // Extract temperature and date data
+      const temperatures = data.list.map(item => item.main.temp);
+      const timestamps = data.list.map(item => new Date(item.dt_txt));
+
+      // Log the data to verify it’s working
+      console.log("Timestamps:", timestamps);
+      console.log("Temperatures:", temperatures);
+
+      // Chart.js setup
+      const ctx = document.getElementById('weatherChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: timestamps,
+          datasets: [{
+            label: `Temperature (°C) in ${city}`,
+            data: temperatures,
+            backgroundColor: 'rgba(0, 123, 255, 0.2)',
+            borderColor: 'rgba(0, 123, 255, 1)',
+            borderWidth: 1,
+            fill: true,
+          }]
+        },
+        options: {
+          responsive: true,
+          scales: {
+            x: {
+              type: 'time', // Use 'time' as the x-axis type
+              time: {
+                unit: 'hour' // Adjust the unit to hours for better readability
+              }
+            },
+            y: {
+              beginAtZero: true,
+              title: {
+                display: true,
+                text: 'Temperature (°C)'
+              }
+            }
+          }
+        }
+      });
+    }
+
+    // Run the function to display the chart
+    displayWeatherChart();
+  </script>
+</body>
+</html>
