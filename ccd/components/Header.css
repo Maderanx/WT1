@@ -1,0 +1,27 @@
+/* src/components/Header.css */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo img {
+    height: 50px; /* Adjust height as needed */
+  }
+  
+  .nav a {
+    margin-left: 1.5rem;
+    font-size: 1rem;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav a:hover {
+    color: #C0292A;
+  }
+  

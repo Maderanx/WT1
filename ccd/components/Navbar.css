@@ -1,0 +1,17 @@
+/* src/components/Navbar.css */
+.navbar {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .navbar a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #C0292A;
+  }
+  
