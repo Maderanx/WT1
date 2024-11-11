@@ -1,0 +1,26 @@
+/* src/components/Header.css */
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+    cursor: pointer;
+  }
+  
